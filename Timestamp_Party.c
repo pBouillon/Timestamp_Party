@@ -8,7 +8,7 @@
 
 int main (int argc, char** argv)
 {
-	int ctsp ;
+    int ctsp ;
 
     for (;;) {
         ctsp = TIMESTAMP ;
