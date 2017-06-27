@@ -14,4 +14,4 @@ Feel free to help me by writing your own and add it before the deadline !
 - [x] Javascript
 - [x] Python
 
-If you want to add your own in another language, just do !
+If you want to add your own in another language, please do !
