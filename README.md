@@ -1,10 +1,9 @@
 # Timestamp_Party
-Prepare yourself for the timestamp 1500000000 on Friday July 14 2017 04:40:00 UTC
+Prepare yourself for the timestamp 1 500 000 000 on Friday July 14 2017 04:40:00 GMT, next round timestamp will be in 2038 so why not celebrate this one?
 
-This little repository aims to celebrate this super round timestamp through many very simple program in as much language as I can.
-Feel free to help me by writing your own and add it before the deadline !
+This little repository aims to celebrate this super round timestamp through many very simple programs in as much language as possible.
 
-# Languages
+## Languages
 - [ ] Brainfuck
 - [x] Bash
 - [x] C
@@ -14,4 +13,4 @@ Feel free to help me by writing your own and add it before the deadline !
 - [x] Javascript
 - [x] Python
 
-If you want to add your own in another language, please do !
+#Feel free to help me by writing your own and add it before the deadline !
