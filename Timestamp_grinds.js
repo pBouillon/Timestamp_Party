@@ -26,9 +26,7 @@ function countdown(cts_field, to_ts_field) {
 		var to_ts   = awaited - cts ;
 
 		cts_field.textContent = cts ;
-		to_ts_field.textContent = to_ts ; 
-
-		console.log(cts) ;
+		to_ts_field.textContent = to_ts ;
  
 		if (to_ts <= 0) {
 			party() ;
@@ -39,7 +37,7 @@ function countdown(cts_field, to_ts_field) {
 }
 
 function get_date() {
-	var date = new Date((get_timestamp()) * 1000) ;
+	var date = new Date(awaited * 1000) ;
 	document.getElementById("date").textContent = "on "+ date ;
 }
 
