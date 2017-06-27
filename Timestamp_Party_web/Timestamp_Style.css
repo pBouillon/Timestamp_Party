@@ -3,17 +3,19 @@ body {
 	color 			: #CCCCCC ;
 	font-family 	: "Garamond", serif ;
 	margin 			: 0 ;
-	overflow: hidden ;
+	overflow 		: hidden ;
 }
 
 h1 {
-	font-size : 3em ;
+	color 	  : white  ;
+	font-size : 9rem   ;
 	text-align: center ;
-	margin-bottom: 0 ;
+	margin-bottom: 0   ;
 }
 
 h2 {
-	font-size : 1.2em ;
+	color 	  : white  ;
+	font-size : 3rem   ;
 	text-align: center ;
 	margin-top: 0 ;
 }
@@ -21,13 +23,13 @@ h2 {
 
 @media (max-width: 300px) {
 	h1 {
-		font-size : 2em ;
+		font-size : 2rem ;
 		text-align: center ;
 		margin-bottom: 0 ;
 	}
 
 	h2 {
-		font-size : 1em ;
+		font-size : 1rem;
 		text-align: center ;
 		margin-top: 0 ;
 	}
@@ -35,49 +37,56 @@ h2 {
 
 
 section {
-	display: flex ;
-	flex-direction: column ;
-	align-items: center ;
+	display        : flex   ;
+	flex-direction : column ;
+	align-items    : center ;
   	justify-content: center ;
 }
 
 p {
-	float: left ;
-	font-weight: 900 ;
+	float      : left ;
+	font-weight: 900   ;
 }
 
 div {
 	min-width: 50% ;
 }
 
+.container {
+	padding-top : 5rem   ;
+	font-size   : 2.5rem ;
+	width       : 55%    ;
+	padding-left: 22.5%  ;
+}
+
 #cts, #to_ts {
-	float: right ;
-	padding-left: 1em ;
-	text-align: left ;
+	float       : right ;
+	padding-left: 1rem  ;
+	text-align  : left  ;
 }
 
 footer {
     background-color: #4D4D4D ;
-    bottom 			: 0px ;
+    bottom 			: 0px  ;
     height 			: 50px ;
-    padding-top: 10px ;
+    padding-top     : 10px ;
     position 		: absolute ;
-    text-align 		: center ;
-    width 			: 100% ;
-    color: #B3B3B3 ;
+    text-align 		: center   ;
+    width 			: 100%     ;
+    color 			: #B3B3B3  ;
 }
 
 a {
-	color: #B3B3B3 ;
+	color 		   : #B3B3B3   ;
 	text-decoration: underline ;
 }
 
 .bounce {
-  animation-name: bounce;
-  transform-origin: center bottom;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
+  animation-duration: 1s ;
+  animation-name    : bounce ;
+  transform-origin  : center bottom   ;
+  animation-fill-mode 	   : both     ;
+  animation-iteration-count: infinite ;
 }
 
 @keyframes bounce {
