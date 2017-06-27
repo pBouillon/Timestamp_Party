@@ -9,7 +9,7 @@ Feel free to help me by writing your own and add it before the deadline !
 - [ ] Bash
 - [x] C
 - [ ] C++
-- [ ] Go
+- [x] Go
 - [ ] Java
 - [x] Javascript
 - [x] Python
