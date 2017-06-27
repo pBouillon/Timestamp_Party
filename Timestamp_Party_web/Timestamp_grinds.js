@@ -1,4 +1,4 @@
-var awaited = 1500000000
+var awaited = 1500000000 ;
 
 function begin() {
 	var cts_field   = document.getElementById("cts") ;
@@ -21,9 +21,9 @@ function begin() {
 }
 
 function countdown(cts_field, to_ts_field) {
-	window.setInterval(function () {
+	var cntdwn = window.setInterval(function () {
         var cts     = get_timestamp() ;
-		var to_ts   = awaited - cts
+		var to_ts   = awaited - cts ;
 
 		cts_field.textContent = cts ;
 		to_ts_field.textContent = to_ts ; 
@@ -32,6 +32,7 @@ function countdown(cts_field, to_ts_field) {
  
 		if (to_ts <= 0) {
 			party() ;
+			clearInterval(cntdwn) ;
 		}
 
 	}, 500);
@@ -51,6 +52,7 @@ function party() {
 
 	var party_h1 = document.createElement ("h1") ;
 	party_h1.textContent = "Merry Timestamp !" ;
+	party_h1.setAttribute('class', 'bounce') ;
 	document.body.appendChild (party_h1) ;
 	new Audio('./party.mp3').play()
 }
