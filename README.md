@@ -6,7 +6,7 @@ Feel free to help me by writing your own and add it before the deadline !
 
 # Languages
 - [ ] Brainfuck
-- [ ] Bash
+- [x] Bash
 - [x] C
 - [ ] C++
 - [x] Go
