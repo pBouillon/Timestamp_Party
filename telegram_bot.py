@@ -13,7 +13,20 @@ from time           import sleep
 ''' constant : str = bot's token '''
 TOKEN = 'your_token_goes_here'
 
-def start(bot, update):
+
+def cmd_list (bot, update) :
+    msg = 'My commands:                               \n'\
+          '/alert_me    -> start the countdown        \n'\
+          '/progress    -> display the current timestamp'
+    update.message.reply_text (msg)
+
+def display_ctd (bot, update):
+    msg = 'The current Timestamp is '
+    msg += str(int(time.time()))
+    print(msg)
+    update.message.reply_text (msg)
+
+def start (bot, update):
     '''Send an alert
 
     Warn the user the bot is running
@@ -23,12 +36,12 @@ def start(bot, update):
         'Aknowledged {}, I\'ll alert you'
         .format(update.message.from_user.first_name)
     )
-    wait4it()
+    wait4it ()
     update.message.reply_text (
         'Merry Timestamp !\nIt reached 1 500 000 000 !'
     )
 
-def wait4it():
+def wait4it ():
     '''Wait until the awaited timestamp
 
     Wait until timestamp reached 1500000000
@@ -45,6 +58,8 @@ def wait4it():
 if __name__ == '__main__':
     updater = Updater (TOKEN)
 
+    updater.dispatcher.add_handler(CommandHandler('list',     cmd_list))
+    updater.dispatcher.add_handler(CommandHandler('progress', display_ctd))
     updater.dispatcher.add_handler(CommandHandler('alert_me', start))
 
     updater.start_polling()
