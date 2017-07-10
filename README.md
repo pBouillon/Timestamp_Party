@@ -12,5 +12,10 @@ This little repository aims to celebrate this super round timestamp through many
 - [ ] Java
 - [x] Javascript
 - [x] Python
+- [x] Create a Bot (not realy a language tho)
+
+## Bot 
+You want to try the bot?
+Go en Telgram[https://telegram.org/], message `@default_sandbox_bot` and send `/alert_me`
 
 ## Feel free to help me by writing your own and add it before the deadline !
