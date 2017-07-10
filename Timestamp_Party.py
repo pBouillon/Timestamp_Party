@@ -14,7 +14,7 @@ if __name__ == '__main__':
     waiting = True
 
     while (waiting) :
-        ctsp = int(round(time())
+        ctsp = int(time())
         if ctsp == awaited_timestamp :
             waiting = False
         sleep(.3)
