@@ -32,18 +32,29 @@ def alert (bot, update):
     )
 
 def cmd_list (bot, update) :
+    '''List all commands
+
+    Display a list of all availables commands
+    '''
     msg = 'My commands:                               \n'\
           '/alert_me    -> start the countdown        \n'\
           '/progress    -> display the current timestamp'
     update.message.reply_text (msg)
 
-def display_ctd (bot, update):
+def display_tsp (bot, update):
+    '''Display current timestamp
+
+    Send a message with the current timestamp
+    '''
     msg = 'The current Timestamp is '
     msg += str(int(time.time()))
-    print(msg)
     update.message.reply_text (msg)
 
 def start (bot, update):
+    '''First handshake
+
+    Say hi to the new user
+    '''
     update.message.reply_text (
         'Greetings!\nSend me /list to see what I\'m capable of !'
     )
@@ -65,10 +76,10 @@ def wait4it ():
 if __name__ == '__main__':
     updater = Updater (TOKEN)
 
-    updater.dispatcher.add_handler(CommandHandler('start',    start))
-    updater.dispatcher.add_handler(CommandHandler('list' ,    cmd_list))
-    updater.dispatcher.add_handler(CommandHandler('progress', display_ctd))
     updater.dispatcher.add_handler(CommandHandler('alert_me', alert))
+    updater.dispatcher.add_handler(CommandHandler('list' ,    cmd_list))
+    updater.dispatcher.add_handler(CommandHandler('progress', display_tsp))
+    updater.dispatcher.add_handler(CommandHandler('start',    start))
 
     updater.start_polling()
     updater.idle()
