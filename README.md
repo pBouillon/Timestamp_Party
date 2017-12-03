@@ -14,8 +14,4 @@ This little repository aims to celebrate this super round timestamp through many
 - [x] Python
 - [x] Create a Bot (not realy a language tho)
 
-## Bot 
-You want to try the bot?
-Open [Telgram](https://telegram.org/), message `@default_sandbox_bot` and send `/alert_me` (works only if the bot is up, otherwise, you won't receive any answer)
-
 ## Feel free to help me by writing your own and add it before the deadline !
